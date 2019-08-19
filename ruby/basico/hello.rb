@@ -1,1 +1,1 @@
-puts "Olá mundo!"
+puts 'Olá Ruby!'

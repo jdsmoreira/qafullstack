@@ -1,21 +1,14 @@
-def dig_ola(nome)
-  puts "Olá, " + nome
+
+def diga_ola(nome)
+    puts 'Olá, ' + nome
 end
 
-dig_ola("Jeferson")
-
-# def retorna_nome
-#   return "Jeferson"
-# end
-
-# resultado = retorna_nome
-
-# puts resultado
+diga_ola('Fernando')
 
 # def soma(v1, v2)
-#   total = v1 + v2
-#   total
+#     total = v1 + v2
+#     total
 # end
 
-# res = soma(10, 25)
+# res = soma(10,25)
 # puts res
