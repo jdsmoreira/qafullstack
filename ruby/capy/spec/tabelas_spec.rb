@@ -1,6 +1,6 @@
-describe 'Tabelas', :tabs do
+describe 'Tabelas', :tabs, :smoke do
     before(:each) do
-        visit 'http://training-wheels-protocol.herokuapp.com/tables'
+        visit '/tables'
     end
 
     it 'deve exibir o sálario do stark' do
@@ -36,13 +36,15 @@ describe 'Tabelas', :tabs do
 
         msg = page.driver.browser.switch_to.alert.text
         expect(msg).to eql 'Chris Pratt foi selecionado para remoção!'
+        page.driver.browser.switch_to.alert.accept
     end
 
-    it 'deve selecionar Chris Pratt para edicao' do
+    it 'deve selecionar Chris Pratt] para edicao' do
         prat = find('table tbody tr', text: 'Chris Pratt')
         prat.find('a', text: 'edit').click
 
         msg = page.driver.browser.switch_to.alert.text
         expect(msg).to eql 'Chris Pratt foi selecionado para edição!'
+        page.driver.browser.switch_to.alert.accept
     end
 end
