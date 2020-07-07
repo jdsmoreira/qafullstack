@@ -2,7 +2,7 @@ require "pg"
 
 class DataBase
     def initialize
-      @connection = PG.connect(host: "localhost", port: "5432", dbname: "ninjaflix", user: "postgres", password: "qaninja")
+      @connection = PG.connect(CONFIG["database"])
     end
 
     def delete_movie(title)

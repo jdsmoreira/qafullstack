@@ -46,5 +46,5 @@ class MovieAdd
         find('input[placeholder=Status]').click
         find('.el-select-dropdown__item', text: status).click
     end 
-    
+    #teste
 end

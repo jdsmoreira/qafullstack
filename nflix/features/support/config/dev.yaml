@@ -1,0 +1,15 @@
+---
+url: "http://127.0.0.1:8080"
+database:
+  host: "127.0.0.1"
+  port: "5432"
+  dbname: "ninjaflix"
+  user: "postgres"
+  password: "qaninja"
+users:
+  cat_manager:
+    email: "tony@stark.com"
+    pass: "pwd123"
+  admin:
+    email: "admin@nflix.com"
+    pass: "admin123"
